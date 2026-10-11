@@ -1,6 +1,7 @@
 # Quick Sort Algorithm
 ## Process
 The Process/step of Quick Sort Algorithm in this program is written below:
+
 1. Determine the number of element inside the list. Set it as n.
 2. Set i (as loop index) = 0 and j(as passable parameter for swapping) = -1
 3. Set the pivot as the last element on the list

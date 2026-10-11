@@ -2,12 +2,12 @@
 ## Process
 The Process/step of Quick Sort Algorithm in this program is written below:
 
-1. Determine the number of element inside the list. Set it as n.
+1. Determine the number of element inside the list. Set it as $n$.
 2. Set i (as loop index) = 0 and j(as passable parameter for swapping) = -1
 3. Set the pivot as the last element on the list
 4. Use the swapping process:
-   1.  if $list[i] > pivot:$ do $i += 1$ only.
-   2.  elif $list[i] <= pivot:$ do $j += 1$. This condition will be further investigated
+   1.  if $list[i] > pivot:$ do $i = i + 1$ only.
+   2.  elif $list[i] <= pivot:$ do $j = j + 1$. This condition will be further investigated
    3.  inside the second condition, check $if i == j$. if `False`, swap the two values position between list[i] and list [j]
 5. The resulted list from swapping process will be distributed into three partition. Create 3 partition (part1, part2, part3) with []
 6. Distribute the value according to the requirement below:

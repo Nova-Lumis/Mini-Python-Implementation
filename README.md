@@ -10,4 +10,5 @@ A collection of small Python console applications I wrote while learning.
 | [zoo-inheritance-polymorphism](zoo-inheritance-polymorphism) | Zoo Keepers containing `Animal` parent and its children class: showing inheritance and polymorphism. |
 | [about-linked-list](About-Linked-List) | A fundamental about Linked list |
 | [binary-search](binary-search) | A scientific implementation of fundamental binary search algorithm. |
-| [quick-sort-algorithm](quick-sort-algorithm) | A program that runs a quick sort algorithm to sort a given list containing a set of numbers from lowest to highest. |
+| [sort-algorithm](sort-algorithm) | Folder containing a few sort algorithms: [bubble sort](bubble-sort-algorithm), [selection sort](selection-sort-algorithm), and quick sort
+[quick-sort](quick-sort-algorithm). |

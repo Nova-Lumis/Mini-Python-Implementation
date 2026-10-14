@@ -18,19 +18,19 @@ The solution:
 2. On the triggered function (after recursive), search if the possibilities has the same value. Ex. [0,0,1,2] is false since 0 happened 2 times (means queen on the same row)
 
 The formulas used in here is:
-...
+```
             for i in range(len(current_matrix) - 1):
                 for j in range(len(current_matrix) - (i+1)): 
-...
+```
 
 This one is called since we also have to check `matrix[0] == matrix[2]` which is possible by using nested loop. 
 
 We also doesn't want the matrix to loop back aka, checking `matrix[1] == matrix[0]` again. Hence: the j index is added with i. Addition of +1 is the consequences of the index i and j that start from 0.
 
-...
+```
                     if current_matrix[i] == current_matrix[(j+1)+i)]: 
                         return # the matrix cannot have a same number, hence the append method is not called.
-...
+```
 
 
 3. Search for diagonal possibilities.

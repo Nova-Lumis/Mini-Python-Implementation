@@ -17,7 +17,7 @@ The solution:
 
 2. On the triggered function (after recursive), search if the possibilities has the same value. Ex. `[0,0,1,2]` is false since 0 happened 2 times (means queen on the same column):
 ```
-Q***   (same row Q) 
+Q***   (same column Q) 
 Q***
 *Q**
 **Q*

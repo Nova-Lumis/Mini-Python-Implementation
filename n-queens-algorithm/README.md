@@ -3,10 +3,12 @@
 Search for all possible matrix that makes the queen cannot capture another queen
 For example in 4x4 matrix
 `[1, 3, 0, 2]` can be accepted since:
+```
 * Q * *
 * * * Q
 Q * * *
 * * Q *
+```
 So, There isn't any queen that can meet each other at same row, column, and diagonal.
 
 
@@ -38,20 +40,24 @@ The key point in searching diagonal possibilities is that the queen exist within
 `[0,(any number),2]`,
 In here, `matrix[2] = 2 and matrix[0] = 0`.  
 The value difference of `matrix[2]-matrix[0] = 2`, also the gap between the index is `[2]-[0] = 2`. The result of two calculation is same (= 2). This means, queen exist on diagonal, and it is true since:
+```
 Q**
 ***   (diagonal Q)
 **Q
+```
 This possibilities then removed.
 
 - Another example in 4x4 matrix
 `[3,(any number),1,(any number)]`
 In here, `matrix[0] = 3 and matrix[2] = 1` -> `matrix[0]-matrix[2] = 3-1 = 2`, also index gap is `[0]-[2] = -2`. The -2 can be change into abs[2], hence why the formula used in the program become absolute.
  
-Since the result is the same, it means Queen exist on diagonal. and it is also true since
+Since the result is the same, it means Queen exist on diagonal. and it is also true since:
+```
 ***Q
 ****  (diagonal Q)
 *Q**
 ****
+```
 This possibilities then removed 
 
 From the two example, the formula (without queen) should follows that: `abs(matrix[i]-matrix[j]) != abs([i]-[j])`

@@ -15,7 +15,13 @@ So, There isn't any queen that can meet each other at same row, column, and diag
 The solution:
 1. Create an adjacent list from the matrix that contains all possible position.
 
-2. On the triggered function (after recursive), search if the possibilities has the same value. Ex. [0,0,1,2] is false since 0 happened 2 times (means queen on the same row)
+2. On the triggered function (after recursive), search if the possibilities has the same value. Ex. `[0,0,1,2]` is false since 0 happened 2 times (means queen on the same column):
+```
+Q***   (same row Q) 
+Q***
+*Q**
+**Q*
+```
 
 The formulas used in here is:
 ```
@@ -58,7 +64,7 @@ Since the result is the same, it means Queen exist on diagonal. and it is also t
 *Q**
 ****
 ```
-This possibilities then removed 
+This possibilities then removed. 
 
 From the two example, the formula (without queen) should follows that: `abs(matrix[i]-matrix[j]) != abs([i]-[j])`.
 In the program, the second term `(abs([i]-[j])` is changed using k_degree, which has the same task.

@@ -60,7 +60,7 @@ Since the result is the same, it means Queen exist on diagonal. and it is also t
 ```
 This possibilities then removed 
 
-From the two example, the formula (without queen) should follows that: `abs(matrix[i]-matrix[j]) != abs([i]-[j])`
+From the two example, the formula (without queen) should follows that: `abs(matrix[i]-matrix[j]) != abs([i]-[j])`.
 In the program, the second term `(abs([i]-[j])` is changed using k_degree, which has the same task.
 
 4. The accepted possibilities that has been filtered by 2 steps earlier added into a new list and displayed as the result.

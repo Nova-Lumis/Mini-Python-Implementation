@@ -64,3 +64,13 @@ From the two example, the formula (without queen) should follows that: `abs(matr
 In the program, the second term `(abs([i]-[j])` is changed using k_degree, which has the same task.
 
 4. The accepted possibilities that has been filtered by 2 steps earlier added into a new list and displayed as the result.
+
+## Output
+Expected output when n=5 is:
+```
+n-queen problems:
+Total combinations for N=5: 10
+[[0, 2, 4, 1, 3], [0, 3, 1, 4, 2], [1, 3, 0, 2, 4], [1, 4, 2, 0, 3],
+[2, 0, 3, 1, 4], [2, 4, 1, 3, 0], [3, 0, 2, 4, 1], [3, 1, 4, 2, 0],
+[4, 1, 3, 0, 2], [4, 2, 0, 3, 1]]
+```
